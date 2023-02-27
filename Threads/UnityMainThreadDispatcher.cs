@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
+/* 
+ All Unity processes happen on the same main thread. When we want to bring information into the game from outside, it will always be in a different thread. This script link receives commands from anywhere and runs in Unity main thread.
+*/
+
 public class UnityMainThreadDispatcher : MonoBehaviour {
 
 	private static readonly string ERROR_NOT_FIND = "UnityMainThreadDispatcher could not find the UnityMainThreadDispatcher object. Please ensure you have added the MainThreadExecutor prefab to your scene.";
