@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 /* 
- All Unity processes happen on the same main thread. When we want to bring information into the game from outside, it will always be in a different thread. This script link receives commands from anywhere and runs in Unity main thread.
+ All Unity processes happen on the same main thread.
+ When we want to bring information into the game from outside,
+ it will always be in a different thread.
+ This script link receives commands from anywhere and runs in Unity main thread.
 */
 
 public class UnityMainThreadDispatcher : MonoBehaviour {
