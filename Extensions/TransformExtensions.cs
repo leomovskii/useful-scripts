@@ -3,7 +3,7 @@ using UnityEngine;
 public static class TransformExtensions {
 
 	public static void LookAt2D(this Transform origin, Transform target) {
-		origin.LookAt2D(target.position);
+		origin.LookAt2D(new Vector3(target.position.x, target.position.y, origin.position.z));
 	}
 
 	public static void LookAt2D(this Transform origin, Vector2 target) {
